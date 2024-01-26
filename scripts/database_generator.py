@@ -20,7 +20,7 @@ DEFAULT_FILE_NAME = "__default.yaml"
 URL_ENTRY_NAME = "__url"
 LAST_MOD_ENTRY_NAME = "__last_mod"
 SITE_URL_ENTRY_NAME = "__site_url"
-SITE_URL_PREFIX = "https://khulnasoft.com/database/"
+SITE_URL_PREFIX = "https://khulnasoft.gihub.io/database/"
 strict = False
 warnings = 0
 
