@@ -1,0 +1,24 @@
+kernl:
+  name: "Kernl"
+
+  image_url: kernl.svg
+
+  tags:
+    - compilers
+    - pytorch
+    - apache-2.0
+
+  temperature: neutral
+  url: https://github.com/ELS-RD/kernl
+  release: "2022-08-05"
+
+  description: |
+    Kernl is an open source, PyTorch-based inference engine built using OpenAI Triton,
+    CUDA graphs and TorchDynamo. Kernl aims to minimize the GPU memory bandwidth
+    bottleneck with kernel fusion while also making sure that such kernels are easy to
+    understand and customize, being each under 200 lines of code.
+
+  features:
+    - "PyTorch Model Optimization Without Rewriting"
+    - "Reduction in GPU Memory Bandwidth Bottlenecks"
+    - "Extensive, Triton-based Optimization Tooling"

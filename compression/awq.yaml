@@ -1,0 +1,24 @@
+llm-awq:
+  name: "llm-awq"
+
+  image_url: llm-awq.png
+
+  tags:
+    - compression
+    - quantization
+    - pytorch
+    - llm
+    - open-source
+    - mit
+
+  temperature: hot
+  url: https://github.com/mit-han-lab/llm-awq
+  release: "2023-06-01"
+
+  description: |
+    Efficient and accurate low-bit weight quantization (INT3/4) for LLMs, supporting
+    instruction-tuned models and multi-modal LMs.
+
+  features:
+    - "INT 3/4 Weight Quantization for LLMs"
+    - "Calibration Data-set free quantization"

@@ -1,0 +1,21 @@
+smoothquant:
+  name: "SmoothQuant"
+
+  image_url: smoothquant.png
+
+  tags:
+    - compression
+    - quantization
+    - pytorch
+    - open-source
+    - mit
+
+  temperature: hot
+  url: https://github.com/mit-han-lab/smoothquant
+  release: "2022-11-17"
+
+  description: |
+    8 bit Weight and Activation Quantization for LLMs
+
+  features:
+    - "8 bit weight and activation quantization for LLMs"

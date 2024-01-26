@@ -1,0 +1,144 @@
+# The tags are structured in tag groups, to enforce tag logic.
+# The tag group schema is:
+#   group-name:
+#     description: "Group description"
+#     visible: true # whether the group should be visible in the UI
+#     min: 1 # minimum number of tags from this group
+#     max: 1 # maximum number of tags from this group
+#     depends_on: # tags or groups that must be present for this group to be valid
+#       tags:
+#         - tag1
+#       groups:
+#         - group1
+#     tags: # list of tags in this group
+#       - tag1
+tags:
+  categories:
+    description: "Categories specific tags"
+    visible: false
+    min: 1
+    tags:
+      - compilers
+      - compression
+      - hardware
+      - serving
+
+  compilers:
+    description: "Compilers specific tags"
+    min: 0
+    depends_on:
+      tags:
+        - compilers
+    tags:
+      - compilers
+      - mlir
+      - llvm
+      - inference-optimizer
+
+  compression:
+    description: "Compression specific tags"
+    min: 1
+    depends_on:
+      tags:
+        - compression
+    tags:
+      - compression
+      - distillation
+      - quantization
+      - tensorization
+      - pruning
+      - binarization
+      - palettization
+
+  hardware:
+    description: "Hardware specific tags"
+    min: 0
+    depends_on:
+      tags:
+        - hardware
+    tags:
+      - hardware
+      - custom-hardware
+
+  serving:
+    description: "Serving specific tags"
+    min: 1
+    depends_on:
+      tags:
+        - serving
+    tags:
+      - serving
+      - container
+      - model-endpoint
+      - inference
+      - training
+      - model-binary
+      - cluster
+      - cloud
+      - ml-ops
+
+  modality:
+    description: "Type of model specific tags"
+    visible: false
+    tags:
+      - llm
+      - vision
+      - nlp
+      - speech
+      - gan
+
+  supported-hardware:
+    description: "Supported hardware specific tags"
+    tags:
+      - amd
+      - nvidia
+      - intel
+      - apple-silicon
+      - cpu
+      - gpu
+      - tpu
+      - edge
+      - web
+
+  eco-system:
+    description: "Eco-system specific tags"
+    tags:
+      - jax
+      - keras
+      - pytorch
+      - tensorflow
+      - numpy
+      - mxnet
+      - onnx
+
+  general:
+    description: "General classification tags"
+    visible: false
+    tags:
+      - open-source
+      - framework
+
+  goals:
+    description: "Goals specific tags"
+    visible: false
+    tags:
+      - high-throughput
+      - low-latency
+
+  license:
+    description: "License specific tags"
+    visible: false
+    min: 1
+    depends_on:
+      tags:
+        - compilers
+        - compression
+    tags:
+      - apache-2.0
+      - mit
+      - bsd-3-clause
+      - gpl-3.0
+      - lgpl-3.0
+      - unlicense
+      - other-license
+      - proprietary

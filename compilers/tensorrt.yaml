@@ -1,0 +1,35 @@
+tensorrt:
+  name: "TensorRT"
+
+  image_url: tensorrt-llm.png
+
+  tags:
+    - compilers
+    - nvidia
+    - inference-optimizer
+    - apache-2.0
+
+  temperature: hot
+  url: https://github.com/NVIDIA/TensorRT
+  release: "2019-05-02"
+
+  description: |
+    TensorRT is a high-performance deep learning inference library developed by NVIDIA.
+    It is designed to optimize and accelerate the inference of deep neural networks for
+    production deployment on NVIDIA GPUs. TensorRT is commonly used in applications that
+    require real-time, low-latency, and high-throughput processing of deep learning
+    models. Given the DAG of the model as an input, TensorRT creates its own DAG. Then
+    it applies optimizations like operation fusion in kernel level and memory
+    rearrangements to speed up the inference. It also eliminates redundant operations
+    that either don’t contribute to the output or when removed they don’t change the
+    final result. For example, if there are two successive reshape operations that
+    cancel each other, both will be dropped during the optimization process. It supports
+    dynamic shapes for inputs when models are simple like CNNs or MLPs. Internally it
+    uses pre-compiled CUDA kernels from linear algebra and deep learning libraries like
+    cuBLAS and cuDNN.
+
+  features:
+    - "Hardware-aware compilation"
+    - "Runtime efficiency management"
+    - "Tailored for safety-critical systems"
+    - "Sparsity support"

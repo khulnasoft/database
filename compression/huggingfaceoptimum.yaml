@@ -1,0 +1,32 @@
+optimum:
+  name: "hugginface/optimum"
+
+  image_url: optimum.png
+
+  tags:
+    - compression
+    - quantization
+    - pruning
+    - distillation
+    - pytorch
+    - open-source
+    - apache-2.0
+
+  temperature: neutral
+  url: https://github.com/huggingface/optimum
+  release: "2021-07-20"
+
+  description: |
+    🤗 Optimum is an extension of 🤗 Transformers and Diffusers, providing a set of optimization
+    tools enabling maximum efficiency to train and run models on targeted hardware, while
+    keeping things easy to use.
+
+  features:
+    - "Post training dynamic quantization"
+    - "Post training static quantization"
+    - "Quantization Aware Training"
+    - "Mixed Precision Training"
+    - "Pruning"
+    - "Distillation"
+    - "Joint Pruning, Quantization and Distillation"
+    - "Graph Optimization using Habana and ONNX"

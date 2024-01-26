@@ -1,0 +1,24 @@
+gptq:
+  name: "gptq"
+
+  image_url: gptq.png
+
+  tags:
+    - compression
+    - quantization
+    - apache-2.0
+
+  temperature: hot
+  url: https://github.com/IST-DASLab/gptq
+  release: "2022-10-19"
+
+  description: |
+    GPTQ is a technique for post-training quantization, which is used to quantize large language models (LLMs) such as GPT.
+    This method minimizes the storage requirements for GPT models by decreasing the bit count necessary to represent each
+    weight within the model, reducing it from 32 bits to a mere 3-4 bits or even 2 bits.
+
+  features:
+    - "2, 3, 4 bit Weight Quantization for LLMs"
+    - "Requires Calibration Dataset"
+    - "Calibration free Zero Shot Quantization"
+    - "Supports AMD GPU out of the box."

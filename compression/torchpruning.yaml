@@ -1,0 +1,23 @@
+torchpruning:
+  name: "Torch-Pruning"
+
+  image_url: torchpruning.png
+
+  tags:
+    - compression
+    - pytorch
+    - open-source
+    - pruning
+    - mit
+
+  temperature: hot
+  url: https://github.com/VainF/Torch-Pruning
+  release: "2019-12-15"
+
+  description: |
+    Torch-Pruning(TP) is a library for sturtured pruning that works with a wide range of deep neural networks including LLMs, Diffusion Models,
+    YOLOv7, Yolov8, Vision Transformers, Swin Transformers, BERT,  FasterRCNN, SSD, ResNe(X)t, ConvNext, DenseNet, ConvNext, RegNet, DeepLab, etc.
+    Torch-Pruning deploys an algorithm called DepGraph to remove parameters physically
+
+  features:
+    - "Structured Pruning"

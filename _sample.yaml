@@ -1,0 +1,58 @@
+# Object name, must be unique across all objects, it's convention to use lower case and hyphens
+# Will result in a URL of https://khulnasoft.com/landscape/sample-name
+sample-name:
+  # Name of the element being described. (Required*)
+  name: "Sample Name"
+
+  # URL of relevant image (e.g. logo). (Optional, Deprecated)
+  # Filename of relevant image in Unify CDN. (Optional)
+  # You will need to upload the logo to this bucket (https://console.cloud.google.com/storage/browser/ivy-database-images) (Not available to the public*)
+  # and only add the filename here.
+  # The image should be:
+  #   - At least 75px in height
+  #   - The ratio can be anything from 1:1 to 52:15 (260px x 75px)
+  #   - Have no padding (white or transparent borders)
+  # Deprecation warning: The previous URL linking will be removed, it's now only available for backward compatibility.
+  image_url: placeholder.png
+
+  # List of tags. (Optional)
+  # see https://github.com/khulnasoft/landscape/blob/main/tags.yaml for a complete list of tags.
+  # Make sure if you added a new tag to add in tags.yaml. Tags must follow kebab-case.
+  tags:
+    - tag1
+    - tag2
+    - tag3
+
+  # Indicating if the entry is hot or cold, will be shown in the interface with a flaming emoji 🔥
+  # or a snowflake emoji ❄️.
+  # Available entries are:
+  # - "hot": A card is "hot" if a significant number of engineers would consider using the tool as part of the solutions team.
+  # - "cold": A card is "cold" if a significant number of engineers would never consider using the tool. Like abandoned projects.
+  # - "neutral": A card is "neutral" if the tool is actively maintained, and might be used in niche situations.
+  # The card is considered "neutral" if the entry is missing or misspelled.
+  temperature: hot
+
+  # URL of the element. (Optional)
+  url: https://khulnasoft.com/
+
+  # Guest blog post URL. (Optional)
+  blog_url: https://khulnasoft.com/blog/some-tool
+
+  # Text entry describing the element. (Optional)
+  # Keep in mind that Markdown is supported
+  description: |
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in erat eleifend, facilisis urna nec, interdum dolor.
+    Maecenas eget nulla id leo ornare laoreet vitae sed eros. In hac habitasse platea dictumst. Ut vel metus est. Pellentesque in pharetra lacus.
+    Duis turpis sapien, pulvinar et lacus ut, accumsan viverra nisl. Cras tempus id quam sed interdum. Aliquam ultrices turpis non enim maximus
+    varius. Quisque in eleifend nulla, ut feugiat lorem. Integer nisl nunc, lobortis eget nisi quis, dapibus dictum nisl. Aenean vel erat lorem.
+    Integer arcu arcu, mattis eget purus sed, rutrum commodo nunc.
+
+    Integer varius iaculis ornare. Phasellus erat orci, fringilla pulvinar ullamcorper nec, feugiat sit amet erat. Nulla euismod ante ex, eget
+    laoreet tortor mollis in. Mauris interdum orci mi, eget mattis risus bibendum eget. Sed condimentum odio eget varius gravida.
+    In hac habitasse platea dictumst. In arcu nisl, tempor sed maximus sit amet, fermentum nec orci. Suspendisse sit amet tincidunt magna.
+    Nulla ac risus ante.
+
+  # List of features to be listed as bullet points. (Optional)
+  features:
+    - "This is the first feature that will be displayed as a bullet point"
+    - "This is the second feature that will be displayed as a bullet point"

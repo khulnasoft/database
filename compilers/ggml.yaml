@@ -1,0 +1,32 @@
+ggml:
+  name: "GGML"
+
+  # image_url: none
+
+  tags:
+    - inference-optimizer
+    - edge
+    - quantization
+    - apple-silicon
+    - compilers
+    - compression
+    - mit
+
+  temperature: hot
+  url: https://github.com/ggerganov/ggml
+  release: "2022-09-18"
+  
+  description: |
+    GGML is a minimal, C-based tensor library focussed on providing efficient training
+    and inference for popular models on commodity hardware, specifically Apple silicon.
+    It has a number of features that make it ideal for edge deployment such as integer
+    quantization ranging from 8-bit quantization all the way to 4-bit, no third-party
+    dependencies, zero memory allocations at runtime, and support for WebAssembly and
+    WASM SIMD for running in the browser.
+
+  features:
+    - "Optimized for Apple Silicon"
+    - "Robust Quantization Support"
+    - "Resource-Friendly"
+    - "No third-party dependencies"
+    - "Efficient CPU inference"

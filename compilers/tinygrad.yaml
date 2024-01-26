@@ -1,0 +1,28 @@
+tinygrad:
+  name: "tinygrad"
+
+  image_url: tinygrad.png
+
+  tags:
+    - compilers
+    - framework
+    - mit
+
+  temperature: hot
+  url: https://github.com/tinygrad/tinygrad
+  release: "2020-10-18"
+
+  description: |
+    tinygrad is a complete, mini deep learning framework, with syntax very similar to
+    that of PyTorch, however, unlike Torch, it is by default lazily compiled and is
+    built on top of a minimalist op set, claiming: “Due to its extreme simplicity, it
+    aims to be the easiest framework to add new accelerators to, with support for both
+    inference and training. If XLA is CISC, tinygrad is RISC.” Though supporting a wide
+    range of hardware, its parent company, TinyCorp, is especially focusing on providing
+    top tier support for AMD GPUs, which it plans on using as the base of its local deep
+    learning compute cluster, tinybox.
+
+  features:
+    - "Simplicity in Design"
+    - "Kernel Fusion with Laziness"
+    - "Extensive Accelerator Support / Easy Integration"

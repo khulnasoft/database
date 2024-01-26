@@ -1,0 +1,22 @@
+anari:
+  name: "anari"
+
+  image_url: anari.webp
+
+  tags:
+    - hardware
+    - high-throughput
+
+  url: https://anari.ai/
+
+  description: |
+    Anari excels in developing innovative solutions that leverage advanced cloud and
+    hardware technologies to achieve superior vector search performance in
+    data-intensive applications. They have an platform which provides an unparalleled
+    foundation for fast and scalable vector search, revolutionizing business data
+    analysis.
+
+  features:
+    - "Has a unique approach which involves harnessing the power of FPGA technology on the AWS/Azure platforms."
+    - "30x more efficient processing in areas like geospatial, 3D architecture, digital twin and metaverse."
+    - "6x lower power consumption compared to GPU."
