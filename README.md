@@ -2,13 +2,13 @@
 
 Unify database is a collection of curated YAML files that hold a description of different algorithms, tools, repos, products, related to different layers of the ML deployment stack, mainly: serving, compression, compilers, hardware.
 
-**[Website](https://khulnasoft.com/database)** - **[Contribute](CONTRIBUTING.md)**
+**[Website](https://khulnasoft.github.io/database)** - **[Contribute](CONTRIBUTING.md)**
 
 ## How to access the database
 
 You can offer the database through:
 
-- [The website](https://khulnasoft.com/database).
+- [The website](https://khulnasoft.github.io/database).
 - Programmatically with [our endpoint](docs/endpoint.md).
 
 ## Database Structure

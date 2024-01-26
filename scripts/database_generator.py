@@ -171,7 +171,7 @@ def check_tags(tags_groups: list[TagGroup], entry_tags: list[str]):
 
 def fix_image_url(image_url: str):
     if not image_url.startswith("http") and not image_url.startswith("data:image"):
-        image_url = "https://cdn.saas.khulnasoft.com/" + image_url
+        image_url = "https://cdn.saas.khulnasoft.github.io/" + image_url
 
     return image_url
 

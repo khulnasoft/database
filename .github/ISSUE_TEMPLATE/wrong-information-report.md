@@ -11,4 +11,4 @@ assignees: ''
 A clear and concise description of what the issue is.
 
 **Link to the wrong entry**
-- https://khulnasoft.com/database/bigdl
+- https://khulnasoft.github.io/database/bigdl

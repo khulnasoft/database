@@ -1,5 +1,5 @@
 # Object name, must be unique across all objects, it's convention to use lower case and hyphens
-# Will result in a URL of https://khulnasoft.com/landscape/sample-name
+# Will result in a URL of https://khulnasoft.github.io/landscape/sample-name
 sample-name:
   # Name of the element being described. (Required*)
   name: "Sample Name"
@@ -33,10 +33,10 @@ sample-name:
   temperature: hot
 
   # URL of the element. (Optional)
-  url: https://khulnasoft.com/
+  url: https://khulnasoft.github.io/
 
   # Guest blog post URL. (Optional)
-  blog_url: https://khulnasoft.com/blog/some-tool
+  blog_url: https://khulnasoft.github.io/blog/some-tool
 
   # Text entry describing the element. (Optional)
   # Keep in mind that Markdown is supported
