@@ -40,7 +40,7 @@ jobs:
           pip install -r scripts/requirements.txt
           python scripts/database_generator.py -s
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
